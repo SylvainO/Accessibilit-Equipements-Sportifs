@@ -46,8 +46,9 @@
 
     header p.total {
       margin-top: 10px;
-      font-size: clamp(0.78rem, 2vw, 0.88rem);
-      color: #9ca3af;
+      font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+      font-weight: 600;
+      color: #374151;
     }
 
     header p.source {
@@ -95,7 +96,7 @@
     .chart-card h2.sensoriel { color: #00897b; }
 
     .chart-card p.card-sub {
-      font-size: 0.78rem;
+      font-size: 0.87rem;
       color: #9ca3af;
       margin-bottom: 16px;
     }
@@ -116,8 +117,8 @@
     footer {
       margin-top: 40px;
       text-align: center;
-      font-size: 0.78rem;
-      color: #9ca3af;
+      font-size: clamp(0.78rem, 2vw, 0.85rem);
+      color: #6b7280;
       line-height: 1.6;
     }
 
@@ -135,9 +136,9 @@
 
   <header>
     <h1>Accessibilité des équipements sportifs en France</h1>
-    <p class="subtitle">Composants accessibles renseignés dans la base DataES</p>
+    <p class="subtitle">Ressources accessibles aux personnes à mobilité réduite, renseignées dans la base des équipements sportifs</p>
     <p class="total">Sur 334&nbsp;458 équipements recensés au total</p>
-    <p class="source">Source&nbsp;: <a href="https://equipements.sports.gouv.fr/explore/assets/data-es-equipement/" target="_blank" rel="noopener">DataES — Ministère des Sports</a> · mise à jour quotidienne</p>
+    <p class="source">Source&nbsp;: <a href="https://equipements.sports.gouv.fr/explore/assets/data-es-equipement/" target="_blank" rel="noopener">Base des Équipements sportifs — Ministère des Sports</a> · mise à jour quotidienne</p>
   </header>
 
   <p class="status" id="status">Chargement des données…</p>
@@ -146,7 +147,7 @@
 
     <div class="chart-card">
       <h2 class="moteur">Handicap moteur</h2>
-      <p class="card-sub">Équipements avec accès adapté, par composant</p>
+      <p class="card-sub">Équipements avec accès adapté, par ressource</p>
       <div class="chart-container">
         <canvas id="chartMoteur"></canvas>
       </div>
@@ -154,7 +155,7 @@
 
     <div class="chart-card">
       <h2 class="sensoriel">Handicap sensoriel</h2>
-      <p class="card-sub">Équipements avec accès adapté, par composant</p>
+      <p class="card-sub">Équipements avec accès adapté, par ressource</p>
       <div class="chart-container">
         <canvas id="chartSensoriel"></canvas>
       </div>
@@ -165,7 +166,7 @@
   <footer>
     Source&nbsp;:
     <a href="https://equipements.sports.gouv.fr/explore/assets/data-es-equipement/" target="_blank" rel="noopener">
-      DataES — Ministère des Sports
+      Base des Équipements sportifs — Ministère des Sports
     </a>
   </footer>
 
